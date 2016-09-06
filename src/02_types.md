@@ -1,39 +1,44 @@
-Types
-==================================
+# Types
 e :: t
 
-- expression e has a type t
+* expression _e_ has a type _t_
+* type inference - computing of expression's type
 
-- type inference - computing of expression's type
-
-
+List of types:
+```haskell
 Bool
 Char
-String - list of Char
-Integer  - arbitrary precision
-Int - fixed precision
+String -- list of Char
+Integer  -- arbitrary precision
+Int -- fixed precision
 Float
+```
 
-Generic Types:
+## Generic Types:
 
-- Lists
--- same type, arbitrary length
+**Lists**
+* same type, arbitrary length
+```haskell
 [False, True] :: [Bool]
 [['a'], ['a', 'b']] :: [[Char]]
+```
 
-- Tupples
--- type can vary, fixed length
+**Tupples**
+* type can vary, fixed length
 
+```haskell
 (1, True) :: (Int, Bool)
 (1, True, 'C') :: (Int, Bool, Char)
+```
 
-
-Boolean
-==================================
-
+# Boolean
+Values:
+```
 True
 False
+```
 
+```
 > True && False
 False
 
@@ -53,13 +58,14 @@ True
 
 > (True || True) && False
 False
+```
 
+* _&&_ higher priority over _||_
 
-- && higher priority over ||
+# String
+* String is just a list of characters -> has the same operations as list
 
-String     
-=================================
-                       
+```
 > "Hello"
 "Hello"
 
@@ -92,13 +98,14 @@ String
 
 > null "Hell"
 False
+```
 
+# Checking type
+* :t for getting type
+* :: reads as "has type"
 
-Checking type
-===================================
-- :t for getting type
-- :: reads as "has type"
-
+Excercises:
+```
 Prelude> :t True
 True :: Bool
 
@@ -108,10 +115,9 @@ Prelude> : 'H'
 Prelude> :t "Hello"
 "Hello" :: [Char]
 
-- all "strings" are lists of Char-s
-
 Prelude> :t 0
 0 :: Num t => t
 
 Prelude> :t 0.1
 0.1 :: Fractional t => t
+```

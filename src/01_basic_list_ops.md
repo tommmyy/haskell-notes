@@ -21,7 +21,7 @@
 5
 ```
 
-** Remove last**
+**Remove last**
 ```
 > init [1, 2, 4]
 [1, 2]
@@ -34,24 +34,24 @@
 ```
 * _Do not use much - it is close to imperative style_
 
-**Select first n items**
+**Select first _n_ items**
 ```
 > take 3 [1, 2, 5, 4]
 [1,2,5]
 ```
 
-**Remove first n items**
+**Remove first _n_ items**
 ```
 > drop 2 [1, 2, 5, 4]
 [5, 4]
 ```
 
-** Get number of items
+**Get number of items*
 ```
 > length [1, 2, 5, 4]
 4
 ```
-* __linear operation - not like in an array (one time op)__
+* _linear operation - not like in an array (one time op)_
 
 **Sum items**
 ```
@@ -77,47 +77,8 @@
 [4,5,2,1]
 ```
 
-**Create tuple - split point determine by nth index**
+**Create tuple - split point determine by _nth_ index**
 ```
 > splitAt 2 [1, 2, 3, 4]
 ([1,2], [3,4])
 ```
-
-Applying functions
-
-In Math, physics:
-f(a, b) + c d
-
-Haskell:
-f a b + c*d
-
-Other expressions:
-
-f(x)        ; f x
-f(x, g(x))  ; f x (g x)
-g(x)h(y)    ; g x * h y
-
-
-Syntax sugar: ``
-
-x `f` y ; f x y
-
-
-Tuples
-========================
-Can contain different types
-
-(1, True, "String")
-
-Pairs
-========================
-(1, "Hello")
-
-> fst (1, "Hellp")
- 1
-
-> snd (1, "Hellp")
-"Hellp"
-
-
-
