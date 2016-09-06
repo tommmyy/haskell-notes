@@ -1,7 +1,9 @@
 # Types
-e :: t
 
-* expression _e_ has a type _t_
+```haskell
+e :: t
+```
+* read as: expression _e_ has a type _t_
 * type inference - computing of expression's type
 
 List of types:
@@ -100,9 +102,8 @@ False
 False
 ```
 
-# Checking type
+# Checking type in GHCi
 * :t for getting type
-* :: reads as "has type"
 
 Excercises:
 ```

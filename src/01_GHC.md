@@ -7,12 +7,12 @@ Download [GHC](https://www.haskell.org/ghc/download_ghc_8_0_1#windows64).
 > ghci nameofscript.hc
 ```
 
-**reloading a script**
+**Reloading a script**
 ```
 > :reload
 ```
 
-**quit**
+**Quit**
 ```
 > :quit
 ```
@@ -22,7 +22,7 @@ Download [GHC](https://www.haskell.org/ghc/download_ghc_8_0_1#windows64).
 > :type
 ```
 
-**help**
+**Help**
 ```
 > :?
 ```

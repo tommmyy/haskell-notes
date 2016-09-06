@@ -32,7 +32,7 @@
 > [1, 3, 5] !! 1
 3
 ```
-* _Do not use much - it is close to imperative style_
+* Do not use too often - it is close to imperative style
 
 **Select first _n_ items**
 ```
@@ -46,12 +46,12 @@
 [5, 4]
 ```
 
-**Get number of items*
+**Get number of items**
 ```
 > length [1, 2, 5, 4]
 4
 ```
-* _linear operation - not like in an array (one time op)_
+* linear operation - not like in an array (one time op)
 
 **Sum items**
 ```

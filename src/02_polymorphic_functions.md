@@ -4,8 +4,8 @@ For example:
 ```haskell
 length :: [a] -> Int
 ```
-* a is "type variable"
-* type variables are written in lower case:
+* _a_ is the _type variable_
+* Type variables are written in lower case:
 ```
 a, b, c, ...
 ```
@@ -28,9 +28,9 @@ sum :: Num a => [a] -> a
 * type variable "a" is in the number class
 
 Other classes:
-* Num - numeric
-* Ord - ordered
-* Eq - equality
+* _Num_ - numeric
+* _Ord_ - ordered
+* _Eq_ - equality
 
 ```
 (==) :: Eq a => a -> a -> Bool

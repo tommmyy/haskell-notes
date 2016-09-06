@@ -1,14 +1,13 @@
 # Tuples
 
 Can contain different types
-```
+```haskell
 (1, True, "String")
 ```
 
-# Pairs
-
-Tuples definition
-```
+## Pairs
+Pair definition:
+```haskell
 (1, "Hello")
 ```
 
