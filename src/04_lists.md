@@ -1,0 +1,32 @@
+# List Comprehensions
+
+> [x^2 | x <- [1..5]]
+[1, 2, 9,  16, 25]
+ 
+ "x <- []" as "x is taken from"
+- x <- [1..5] is "generator"
+
+Multiple Generators
+===============================
+> [(x^2, y^2) | x <- [1..3], y <- [1, 2]]
+[(1,1),(1,4),(4,1),(4,4),(9,1),(9,4)]
+
+- multiple generators are like "nested loops" where first generator is outer loop
+
+Dependant generators
+===============================
+> [(x, y) | x <- [1..3], y <- [x..3]]
+[(1,1), (1, 2), (1,3), (2, 2), (2, 3), (3, 3)]
+
+Guards
+===============================
+
+> [x | x <- [1..10], odd x]
+[1,3,5,7,9]
+
+
+factors :: Int -> [Int]
+factors n = [x | x <- [1..n], n `mod` x == 0]
+
+> factors 15 
+[1,3,5,15]
