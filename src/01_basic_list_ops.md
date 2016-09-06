@@ -4,81 +4,81 @@
 * Every element in list must have the same type.
 
 **Select first**
-```
-> head [1, 3, 5]
-1
+```haskell
+head [1, 3, 5]
+-- 1
 ```
 
 **Remove first**
-```
-> tail [1, 3, 5]
-[3, 5]
+```haskell
+tail [1, 3, 5]
+-- [3, 5]
 ```
 
 **Select last**
-```
-> last [1..5]
-5
+```haskell
+last [1..5]
+-- 5
 ```
 
 **Remove last**
-```
-> init [1, 2, 4]
-[1, 2]
+```haskell
+init [1, 2, 4]
+-- [1, 2]
 ```
 
 **Select nth**
-```
-> [1, 3, 5] !! 1
-3
+```haskell
+[1, 3, 5] !! 1
+-- 3
 ```
 * Do not use too often - it is close to imperative style
 
 **Select first _n_ items**
-```
-> take 3 [1, 2, 5, 4]
+```haskell
+-- take 3 [1, 2, 5, 4]
 [1,2,5]
 ```
 
 **Remove first _n_ items**
-```
-> drop 2 [1, 2, 5, 4]
-[5, 4]
+```haskell
+drop 2 [1, 2, 5, 4]
+-- [5, 4]
 ```
 
 **Get number of items**
-```
-> length [1, 2, 5, 4]
+```haskell
+-- length [1, 2, 5, 4]
 4
 ```
 * linear operation - not like in an array (one time op)
 
 **Sum items**
-```
-> sum [1, 2, 5, 4]
-12
+```haskell
+sum [1, 2, 5, 4]
+-- 12
 ```
 
 **Multiply items**
-```
-> product [1, 2, 5, 4]
-40
+```haskell
+product [1, 2, 5, 4]
+-- 40
 ```
 
 **Join two lists**
-```
-> [1, 2] ++ [3, 4]
-[1,2,3,4]
+```haskell
+[1, 2] ++ [3, 4]
+-- [1,2,3,4]
 ```
 
 **Reverse items**
-```
-> reverse [1, 2, 5, 4]
-[4,5,2,1]
+```haskell
+reverse [1, 2, 5, 4]
+-- [4,5,2,1]
 ```
 
 **Create tuple - split point determine by _nth_ index**
-```
-> splitAt 2 [1, 2, 3, 4]
-([1,2], [3,4])
+```haskell
+splitAt 2 [1, 2, 3, 4]
+-- ([1,2], [3,4])
 ```

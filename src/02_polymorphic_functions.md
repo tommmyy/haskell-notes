@@ -32,14 +32,14 @@ Other classes:
 * _Ord_ - ordered
 * _Eq_ - equality
 
-```
+```haskell
 (==) :: Eq a => a -> a -> Bool
 (>) :: Ord a => a -> a -> Bool
 (+) :: Num a => a -> a -> a
 ```
 
 Exercise answers:
-```
+```haskell
 ['a','B'] :: [Char]
 ('a','B') :: (Char,Char)
 [(False, '0'), (True, '1')] :: [(Bool, Char)]

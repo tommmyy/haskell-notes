@@ -24,7 +24,7 @@ not True = False
 (&&) :: Bool -> Bool
 True && True = True
 _ && _ = False
-haskell
+```
 
 * Evaluated from left to right,  top to bottom
 *  You cannot repeat arguments, type error:
@@ -83,13 +83,13 @@ odds n = map (\x -> x*2 + 1) [0..n-1]
 ```
 
 # Sections
-```
-> 1+2
-3
+```haskell
+1+2
+-- 3
 
-> (+) 1 2
-> (1+) 2
-> (+2) 1
+(+) 1 2
+(1+) 2
+(+2) 1
 ```
 
 

@@ -2,7 +2,7 @@
 
 Function is a mapping from values of one type to values of another type
 
-```
+```haskell
 not :: Bool -> Bool
 isDiging  :: Char -> Int
 
@@ -26,19 +26,20 @@ multiple x y z -> x*y*z
 # Curring convensions
 
 Arrow associate to the right:
-```
+```haskell
+-- Expression:
 Int -> Int -> Int -> Int
-```
-Means:
-```
+
+-- Means:
 Int -> (Int -> (Int -> Int))
 ```
 
 Function application associate to the left:
-```
+
+```haskell
+-- Expression:
 multiple x y z
-```
-Means:
-```
+
+-- Means:
 ((multiple x) y) z
 ```

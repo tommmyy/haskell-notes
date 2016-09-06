@@ -12,13 +12,13 @@ Pair definition:
 ```
 
 **Get first**
-```
-> fst (1, "Hellp")
- 1
+```haskell
+fst (1, "Hellp")
+-- 1
 ```
 
 **Get second**
-```
-> snd (1, "Hellp")
-"Hellp"
+```haskell
+snd (1, "Hellp")
+-- "Hellp"
 ```

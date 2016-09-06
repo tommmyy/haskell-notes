@@ -35,31 +35,31 @@ Float
 
 # Boolean
 Values:
-```
+```haskell
 True
 False
 ```
 
-```
-> True && False
-False
+```haskell
+True && False
+-- False
 
-> True || False
-True
+True || False
+-- True
 
-> not True
-> False
+not True
+-- False
 
 not True || True
-> True
+-- True
 
-> True || True && False
-True
-> True || (True && False)
-True
+True || True && False
+-- True
+True || (True && False)
+--True
 
-> (True || True) && False
-False
+(True || True) && False
+-- False
 ```
 
 * _&&_ higher priority over _||_
@@ -67,58 +67,58 @@ False
 # String
 * String is just a list of characters -> has the same operations as list
 
-```
-> "Hello"
+```haskell
 "Hello"
+-- "Hello"
 
-> "Hello" ++ "World"
-"HelloWorld
+"Hello" ++ "World"
+-- "HelloWorld
 
-> length ("Hello" ++ "World")
-10
+length ("Hello" ++ "World")
+-- 10
 
-> head "Hello"
-'H'
+head "Hello"
+-- 'H'
 
-> tail "Hello"
-"ello"
+tail "Hello"
+-- "ello"
 
-> last "Hello"
-'o'
+last "Hello"
+-- 'o'
 
-> reverse "Hello"
-"olleH"
+reverse "Hello"
+-- "olleH"
 
-> init "Hello"
-"Hell"
+init "Hello"
+-- "Hell"
 
-> reverse(tail (reverse "Hello"))
-"Hell"
+reverse(tail (reverse "Hello"))
+-- "Hell"
 
-> (reverse) ((tail) ((reverse) "Hello"))
-"Hell"
+(reverse) ((tail) ((reverse) "Hello"))
+-- "Hell"
 
-> null "Hell"
-False
+null "Hell"
+-- False
 ```
 
 # Checking type in GHCi
 * :t for getting type
 
 Excercises:
-```
-Prelude> :t True
-True :: Bool
+```haskell
+:t True
+-- True :: Bool
 
-Prelude> : 'H'
-'H' :: Char
+:t 'H'
+-- 'H' :: Char
 
-Prelude> :t "Hello"
-"Hello" :: [Char]
+:t "Hello"
+-- "Hello" :: [Char]
 
-Prelude> :t 0
-0 :: Num t => t
+:t 0
+-- 0 :: Num t => t
 
-Prelude> :t 0.1
-0.1 :: Fractional t => t
+:t 0.1
+-- 0.1 :: Fractional t => t
 ```
