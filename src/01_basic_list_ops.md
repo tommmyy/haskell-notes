@@ -3,53 +3,85 @@
 * Lists are NOT ARRAYS!
 * Every element in list must have the same type.
 
-_select first_
-`
+**Select first**
+```
 > head [1, 3, 5]
 1
-`
+```
 
+**Remove first**
+```
 > tail [1, 3, 5]
 [3, 5]
+```
 
+**Select last**
+```
 > last [1..5]
 5
+```
 
-> init [1, 2]
-[1]
+** Remove last**
+```
+> init [1, 2, 4]
+[1, 2]
+```
 
-
+**Select nth**
+```
 > [1, 3, 5] !! 1
 3
+```
+* _Do not use much - it is close to imperative style_
 
-- nemělo by se používat, zřejmě člověk sklouzl do imperativní programování
-
-
+**Select first n items**
+```
 > take 3 [1, 2, 5, 4]
 [1,2,5]
+```
 
+**Remove first n items**
+```
 > drop 2 [1, 2, 5, 4]
 [5, 4]
+```
 
+** Get number of items
+```
 > length [1, 2, 5, 4]
 4
-- linear operation - not like in an array (one time op)
+```
+* __linear operation - not like in an array (one time op)__
 
+**Sum items**
+```
 > sum [1, 2, 5, 4]
 12
+```
 
+**Multiply items**
+```
 > product [1, 2, 5, 4]
 40
+```
 
+**Join two lists**
+```
 > [1, 2] ++ [3, 4]
 [1,2,3,4]
+```
 
-
+**Reverse items**
+```
 > reverse [1, 2, 5, 4]
 [4,5,2,1]
+```
 
+**Create tuple - split point determine by nth index**
+```
 > splitAt 2 [1, 2, 3, 4]
 ([1,2], [3,4])
+```
 
 Applying functions
 
