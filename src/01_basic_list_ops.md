@@ -1,14 +1,15 @@
-Download: https://www.haskell.org/ghc/download_ghc_8_0_1#windows64
+# Operations Over List
 
-Ops over list:
+* Lists are NOT ARRAYS!
+* Every element in list must have the same type.
 
-- lists are NOT ARRAYS! 
-- every element in list must have the same type
-
-> head [1, 3, 5]   
+_select first_
+`
+> head [1, 3, 5]
 1
+`
 
-> tail [1, 3, 5] 
+> tail [1, 3, 5]
 [3, 5]
 
 > last [1..5]
