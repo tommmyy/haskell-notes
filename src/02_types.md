@@ -122,3 +122,12 @@ Excercises:
 :t 0.1
 -- 0.1 :: Fractional t => t
 ```
+
+# Types and Typeclasses
+
+* Types are sets of values
+* Typeclasses are sets of types
+
+E.g.:
+Type `Int` includes `6`,`56`,`0`, ...
+But the typeclass `Num` includes `Int`, `Float`...
